@@ -1,5 +1,6 @@
 package ru.job4j.person.controller;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpMethod;
@@ -16,6 +17,7 @@ import static org.junit.Assert.*;
  * Tests of REST Templates.
  * Run PersonApp before tests.
  */
+@Ignore
 public class RestTemplateTest {
 
     private static final String API = "http://localhost:8081/person/";
