@@ -14,12 +14,12 @@ import static org.junit.Assert.*;
 
 /**
  * Tests of REST Templates.
- * Run AuthApp before tests.
+ * Run PersonApp before tests.
  */
 public class RestTemplateTest {
 
-    private static final String API = "http://localhost:8080/person/";
-    private static final String API_ID = "http://localhost:8080/person/{id}";
+    private static final String API = "http://localhost:8081/person/";
+    private static final String API_ID = "http://localhost:8081/person/{id}";
 
     @Test
     public void whenGetAllPersonsThenList() {
@@ -35,6 +35,7 @@ public class RestTemplateTest {
         ).getBody();
         assertNotNull(entity);
         assertTrue(persons.size() > 0);
+        rest.delete(API_ID, entity.getId());
     }
 
     @Test
@@ -46,6 +47,7 @@ public class RestTemplateTest {
         Person entity = rest.postForObject(API, person, Person.class);
         assertNotNull(entity);
         assertTrue(entity.getId() > 0);
+        rest.delete(API_ID, entity.getId());
     }
 
     @Test
@@ -58,6 +60,7 @@ public class RestTemplateTest {
         Person remote = rest.getForObject(API_ID, Person.class, entity.getId());
         assert remote != null;
         assertEquals(remote.getLogin(), entity.getLogin());
+        rest.delete(API_ID, entity.getId());
     }
 
     @Test
@@ -73,6 +76,7 @@ public class RestTemplateTest {
         Person remote = rest.getForObject(API_ID, Person.class, entity.getId());
         assert remote != null;
         assertEquals(remote.getLogin(), newName);
+        rest.delete(API_ID, entity.getId());
     }
 
     @Test

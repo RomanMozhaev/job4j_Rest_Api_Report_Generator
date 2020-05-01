@@ -11,6 +11,12 @@
     <artifactId>report_generator</artifactId>
     <packaging>jar</packaging>
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>2.2.6.RELEASE</version>
+        </dependency>
 
         <dependency>
             <groupId>ru.job4j_Rest_Api</groupId>
