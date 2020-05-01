@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/RomanMozhaev/salescarplatform_spring.svg?branch=master)](https://travis-ci.org/RomanMozhaev/salescarplatform_spring)
-[![codecov](https://codecov.io/gh/RomanMozhaev/salescarplatform_spring/branch/master/graph/badge.svg)](https://codecov.io/gh/RomanMozhaev/salescarplatform_spring)
+[![Build Status](https://travis-ci.org/RomanMozhaev/job4j_Rest_Api_Report_Generator.svg?branch=master)](https://travis-ci.org/RomanMozhaev/job4j_Rest_Api_Report_Generator)
+[![codecov](https://codecov.io/gh/RomanMozhaev/job4j_Rest_Api_Report_Generator/branch/master/graph/badge.svg)](https://codecov.io/gh/RomanMozhaev/job4j_Rest_Api_Report_Generator)
 # job4j
 # REST API PERSON REPORT GENERATOR
 The person service and report generator service.
